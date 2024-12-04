@@ -1,0 +1,65 @@
+{
+  "name": "my-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "format": "prettier --write .",
+    "commit": "commitment --edit",
+    "test": "echo \"No tests specified\""
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.css": "prettier --write",
+    "*.jsx": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.462.0",
+    "next": "14.2.15",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icon": "^1.0.0",
+    "react-icons": "^5.3.0",
+    "swr": "^2.2.5",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "devmoji": "^2.3.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.15",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
